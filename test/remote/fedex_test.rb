@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../test_helper'
+require 'test_helper'
 
 class FedExTest < Test::Unit::TestCase
 
@@ -6,7 +6,6 @@ class FedExTest < Test::Unit::TestCase
     @packages  = TestFixtures.packages
     @locations = TestFixtures.locations
     @carrier   = FedEx.new(fixtures(:fedex).merge(:test => true))
-    FedEx.logger = Logger.new('/Users/james/.active_merchant/fedex.log')
   end
     
   def test_valid_credentials

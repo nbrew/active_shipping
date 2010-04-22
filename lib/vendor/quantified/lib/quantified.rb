@@ -1,6 +1,6 @@
 $: << File.dirname(__FILE__)
-require 'rubygems'
-require 'activesupport'
+
+require 'active_support/all'
 require 'bigdecimal'
 
 require 'quantified/attribute'
